@@ -4,6 +4,17 @@ fruit = {"orange": "A sweet, orange citrus fruit",
          "grape": "a small, sweet fruit growing in bunches",
          "lime": "a sour, green citrus fruit"}
 
+veg = { "cabbage": "every child's favorite",
+        "sprouts": "mmm, lovely",
+        "spinach": "can I have more fruits please"}
+
+veg.update(fruit)
+
+fruit_and_veg = fruit.copy()
+fruit_and_veg.update(veg)
+
+print(veg)
+
 # print(fruit)
 # print(fruit["lemon"])
 # fruit["pear"] = "an odd shaped apple"
@@ -46,12 +57,12 @@ fruit = {"orange": "A sweet, orange citrus fruit",
 # for f in fruit:
 #     print(f + " is " + fruit[f])
 
-print(fruit.keys())
-
-print(fruit.values())
-
-f_tuple = tuple(fruit.items())
-
-for snack in f_tuple:
-    item, description = snack
-    print(item, description)
+# print(fruit.keys())
+#
+# print(fruit.values())
+#
+# f_tuple = tuple(fruit.items())
+#
+# for snack in f_tuple:
+#     item, description = snack
+#     print(item, description)
